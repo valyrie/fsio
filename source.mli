@@ -5,6 +5,7 @@ type t = {
   min_load : int;
 }
 val path : t -> Path.t
+val path_of : t -> string
 val open_path : Path.t -> t
 val load : t -> int -> int
 val read_bytes : t -> int -> int -> bytes
